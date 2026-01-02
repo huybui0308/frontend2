@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cyberpunk Color Palette */
+  --color-primary: 186 100% 50%;
+  --color-primary-dark: 186 100% 33%;
+  --color-primary-light: 186 100% 70%;
+  
+  --color-secondary: 300 100% 50%;
+  --color-accent: 60 100% 50%;
+  
+  --color-success: 156 100% 50%;
+  --color-warning: 38 100% 50%;
+  --color-error: 0 100% 63%;
+  --color-info: 197 100% 50%;
+  
+  --background: 225 36% 6%;
+  --foreground: 0 0% 100%;
+  
+  --card: 225 20% 9%;
+  --card-foreground: 0 0% 100%;
+  
+  --popover: 225 25% 12%;
+  --popover-foreground: 0 0% 100%;
+  
+  --primary: 186 100% 50%;
+  --primary-foreground: 225 36% 6%;
+  
+  --secondary: 300 100% 50%;
+  --secondary-foreground: 0 0% 100%;
+  
+  --muted: 225 20% 15%;
+  --muted-foreground: 0 0% 65%;
+  
+  --accent: 60 100% 50%;
+  --accent-foreground: 225 36% 6%;
+  
+  --destructive: 0 100% 63%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 186 100% 50% / 0.2;
+  --input: 186 100% 50% / 0.3;
+  --ring: 186 100% 50%;
+  
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+code, pre, kbd, samp {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Cyberpunk Glow Effects */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+.glow-yellow {
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+}
+
+.glow-green {
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+.glow-hover-cyan:hover {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.5);
+}
+
+/* Glassmorphism */
+.glass {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-strong {
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Terminal Effect */
+.terminal-border {
+  border: 2px solid rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+/* Neon Text */
+.neon-text-cyan {
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.neon-text-magenta {
+  color: #ff00ff;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.neon-text-yellow {
+  color: #ffff00;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
+
+/* Font utilities */
+.font-display {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
